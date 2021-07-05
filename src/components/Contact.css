@@ -1,0 +1,105 @@
+body
+{
+    margin: 0;
+    background: #fff;
+    overflow: hidden;
+    font-family: Montserrat;
+}
+.sidebar
+{
+    position: absolute;
+    height: 100vh;
+    width: 20%;
+    padding: 2em 0 0 0;
+    background: rgb(78, 81, 231);
+    overflow: hidden;
+}
+.sidebar ul li
+{
+    margin: 2em 0;
+    padding: 1em .5em;
+    list-style: none;
+    background: rgb(78, 81, 231);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.sidebar ul li a
+{
+    padding: .5em 10em .5em 1em;
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: rgb(78, 81, 231);
+    z-index: 1;
+}
+.sidebar ul li a.active
+{
+    background: #fff;
+    color: #000;
+}
+section
+{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    z-index: -1;
+}
+section form
+{
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+    background: #fff;
+}
+section form label
+{
+    font-size: 18px;
+}
+section form input
+{
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: montserrat;
+    cursor: pointer;
+    border-color: #fff;
+    border-radius: 5px;
+    outline: 0;
+    border: 2px solid #818181;
+}
+section form input:focus,
+section form input:hover 
+{
+    border-color: #000;
+} 
+section form textarea
+{
+    margin-top: .5em;
+    resize: none;
+    padding: 1em;
+    font-size: 18px;
+    border-width: 2px;
+    border-color: #818181;
+    font-family: montserrat;
+    outline: 0;
+    border-radius: 10px;
+}
+section form textarea:focus,
+section form textarea:hover 
+{
+    border-color: #000;
+} 
+section form input[type="submit"]
+{
+    font-weight: bold;
+    color: #fff;
+    background: rgb(78, 81, 231);
+    border-color: rgb(78, 81, 231);
+}
